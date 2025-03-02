@@ -1,0 +1,8 @@
+.personal-info {
+    &__name {
+        margin-block-end: 4px;
+    }
+    &__location {
+        color: var(--highlighted-text);
+    }
+}

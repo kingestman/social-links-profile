@@ -1,0 +1,20 @@
+@use '../utils/' as u;
+
+#main {
+    padding-block-start: u.rem(24);
+    background-color: var(--main-bg);
+    width: min(100% - u.rem(48), u.rem(456));
+    // margin-inline: auto;
+    border-radius: 12px;
+}
+
+.wrapper {
+    width: min(100% - u.rem(48), u.rem(376));
+    margin-inline: auto;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

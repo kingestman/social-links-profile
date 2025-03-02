@@ -1,0 +1,24 @@
+@use '../utils/' as u;
+
+.links {
+    &__wrapper {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__link {
+        text-align: center;
+        background-color: var(--buttons-bg);
+        padding-block: 12px;
+        border-radius: 8px;
+        transition: background-color 0.6s ease-in-out;
+    }
+
+    &__link:hover {
+        background-color: var(--highlighted-text);
+    }
+
+    &__link:hover a {
+        color: var(--buttons-bg);
+    }
+}

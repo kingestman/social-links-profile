@@ -1,0 +1,45 @@
+@use '../utils/' as u;
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus {
+        left: 0;
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        padding: 0.5rem;
+        border: 1px solid;
+    }
+}
+
+.textPreset1 {
+    font-size: u.rem(24);
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textPreset2 {
+    font-size: u.rem(14);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.textPreset2Bold {
+    @extend .textPreset2;
+    font-weight: bold;
+    text-align: center;
+}

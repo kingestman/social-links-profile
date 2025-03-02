@@ -1,0 +1,132 @@
+#main {
+    padding-block-start: 1.5rem;
+    background-color: var(--main-bg);
+    width: min(100% - 3rem, 28.5rem);
+    border-radius: 12px;
+}
+
+.wrapper {
+    width: min(100% - 3rem, 23.5rem);
+    margin-inline: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.visually-hidden:focus {
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid;
+}
+
+.textPreset1 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textPreset2,
+.textPreset2Bold {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.textPreset2Bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+:root {
+    --background-color: hsl(0, 0%, 8%);
+    --main-bg: hsl(0, 0%, 12%);
+    --buttons-bg: hsl(0, 0%, 20%);
+    --highlighted-text: hsl(75, 94%, 57%);
+    --text-color: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+section {
+    margin-block-end: 24px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+}
+
+.personal-info__name {
+    margin-block-end: 4px;
+}
+.personal-info__location {
+    color: var(--highlighted-text);
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+}
+
+.links__wrapper {
+    display: grid;
+    gap: 16px;
+}
+.links__link {
+    text-align: center;
+    background-color: var(--buttons-bg);
+    padding-block: 12px;
+    border-radius: 8px;
+    transition: background-color 0.6s ease-in-out;
+}
+.links__link:hover {
+    background-color: var(--highlighted-text);
+}
+.links__link:hover a {
+    color: var(--buttons-bg);
+} /*# sourceMappingURL=style.css.map */
