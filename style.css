@@ -129,4 +129,10 @@ a {
 }
 .links__link:hover a {
     color: var(--buttons-bg);
-} /*# sourceMappingURL=style.css.map */
+}
+
+@media (min-width: 375px) {
+    #main {
+        padding-block: 40px;
+    }
+}
